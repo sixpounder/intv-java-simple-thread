@@ -16,8 +16,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        new Reader().start();
+        Reader t1 = new Reader().start();
         value = 42;
         ready = true;
+        t1.join();
     }
 }
